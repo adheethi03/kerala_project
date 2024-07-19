@@ -98,10 +98,10 @@
                 <input type="text"name="name" id="name" required>
                 <br>
                 <label for="email">EMAIL:</label>
-                <input type="email" name="email" id="email"required>
+                <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"required>
                 <br>
                 <label for="phone">PHONE:</label>
-                <input type="text" name="phone" id="phone" required>
+                <input type="tel" name="phone" id="phone" pattern= "[0-9]{3}-[0-9]{3}-[0-9]"required>
                 <br>
                 <P>DISTRICTS:<select name="Districts" id="district" required>
                     <option value="">kasargode</option>
@@ -121,15 +121,16 @@
                     </select>
                 </p>
                 </select>
+            <input type="submit" value ="submit">
 
             </form>
             <br>
-            <button>SUBMIT</button>
+            
         </fieldset>
     </section>
     <footer>
         
-        copywrite@2024
+        copyright@2024
     </footer>
 </body>
 </html>
