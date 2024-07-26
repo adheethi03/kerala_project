@@ -95,15 +95,17 @@
             <legend>CONTACT US</legend>
             <form action="#" id="form">
                 <label for="name">NAME:</label >
-                <input type="text"name="name" id="name" required>
+                <input type="text"name="name" id="name" pattern="^[A-Za-z\s]$" title="Alphabets only" required>
                 <br>
                 <label for="email">EMAIL:</label>
                 <input type="email" name="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"required placeholder="someone@gmail.com">
                 <br>
                 <label for="phone">PHONE:</label>
-                <input type="tel" name="phone" id="phone" maxlength="10" required>
+                <input type="tel" name="phone" id="phone" maxlength="10" pattern="[0-9]{10}" title="please enter 10 digit mobile number" required>
                 <br>
-                <P>DISTRICTS:<select name="Districts" id="district" required>
+                <label for="Districts">DISTRICTS:</label>
+                <select name="Districts" id="district" required>
+                    <option value="">None</option>
                     <option value="">kasargode</option>
                     <option value="">kannur</option>
                     <option value="">Wayanad</option>
